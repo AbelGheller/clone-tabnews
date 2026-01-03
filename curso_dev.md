@@ -2,12 +2,12 @@
 
 Base
 
-* `nodejs` `lts/hydrogen`
-* Framework/Web host
-* `next@13.1.6`
-* 
-* `react@18.2.0`
-* `react-dom@18.2.0`
+- `nodejs` `lts/hydrogen`
+- Framework/Web host
+- `next@13.1.6`
+-
+- `react@18.2.0`
+- `react-dom@18.2.0`
 
 source~/.zshrc
 
@@ -29,24 +29,24 @@ npm install react-dom@18.2.0
 
 ### Lista de comandos abordados
 
-* `git log` - listar os `commits` do repositório.
-* `git add` - sobe alterações para a `staging area`.
-* `git commit` - realiza novos `commits`.
-* `git commit --amend` - substitui o `commit` anterior por um novo, mas aproveita as alterações dele.
-* `git diff` - calcula a diferença entre as versões/alterações dos arquivos.
+- `git log` - listar os `commits` do repositório.
+- `git add` - sobe alterações para a `staging area`.
+- `git commit` - realiza novos `commits`.
+- `git commit --amend` - substitui o `commit` anterior por um novo, mas aproveita as alterações dele.
+- `git diff` - calcula a diferença entre as versões/alterações dos arquivos.
 
 Todos estes comandos funcionam de forma **offline** no Git e podem ser usados sem a necessidade de uma conexão com a internet, pois nenhum deles transmite informações para fora do seu computador.
 
-* `git commit -m "mensagem"` - atalho para fazer novos `commits`.
-* `git push` - empurrar alterações `locais` para o `origin`.
-* `git push --force` - empurrar de forma forçada alterações `locais` para o `origin`.
-* `git push -f` - a forma comprimida do comando anterior.
+- `git commit -m "mensagem"` - atalho para fazer novos `commits`.
+- `git push` - empurrar alterações `locais` para o `origin`.
+- `git push --force` - empurrar de forma forçada alterações `locais` para o `origin`.
+- `git push -f` - a forma comprimida do comando anterior.
 
 ## Dia 9
 
 ### Organização de tarefas
 
-trabalhar pouco e ganhar muito  = saldo
+trabalhar pouco e ganhar muito = saldo
 
 #### Nivel 1
 
@@ -82,10 +82,35 @@ Desapontar o cérebro
 
 ---
 
-Revisao deploy CI 
+Revisao deploy CI
 
 import o repositorio/selecione o repositorio/Deploy
 
-Principio do privilegio minimo 
+Principio do privilegio minimo
+
+---
+
+instalar o pluguin editorconfig criar arquivo
+.editorconfig
+
+root= true
+
+[*]
+
+indent_style= space
+
+indent_size=2
+
+=== no package.json em scripts colocar a linha
+
+"lint:check": "prettier --check .",
+
+"lint:fix": "prettier --write ."
+
+npm install prettier -D
+
+npm run lint:check
+
+npm run lint:fix
 
 ---
