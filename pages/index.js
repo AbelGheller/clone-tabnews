@@ -5,7 +5,7 @@ function Home() {
         Rosas são vermelhas,
         Violetas são azuis,
         Código é poesia,
-        E Next.js nos conduz. # !
+        E Next.js nos conduz.
       </h1>
     </div>
   );
